@@ -107,7 +107,7 @@ misc_options = [
 ('@CPACK_PACKAGE_VERSION_FULL@', 'CPACK_PACKAGE_VERSION_FULL'), 
 ('@PACKAGE_URL@', 'PACKAGE_URL'), 
 ('@SF_COUNT_MAX@', '0x7fffffffffffffffi64'), 
-('@INLINE_CODE@', '//')
+('@INLINE_CODE@', '')
 ]
 
 # libsndfile - sources
