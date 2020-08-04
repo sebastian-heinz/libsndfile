@@ -19,13 +19,9 @@ void Libsndfile::read_file(const String &p_path) {
 
 	file = SndfileHandle(fname);
 
-	printf("Opened file '%s'\n", fname);
-	printf("    Sample rate : %d\n", file.samplerate());
-	printf("    Channels    : %d\n", file.channels());
-
-
-
-	puts("");
+	print_line(vformat("Opened file '%s'\n", String(fname.c_str())));
+	print_line(vformat("Sample rate : %d\n", file.samplerate()));
+	print_line(vformat("Channels    : %d\n", file.channels()));
 }
 
 void Libsndfile::_bind_methods() {
@@ -34,6 +30,7 @@ void Libsndfile::_bind_methods() {
 
 Libsndfile::Libsndfile() {
 	singleton = this;
+	// read_file("C:/test.wav");
 }
 
 Libsndfile::~Libsndfile() {

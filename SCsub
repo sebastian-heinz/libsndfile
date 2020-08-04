@@ -75,7 +75,7 @@ switch_options = [
 
 bool_options = [
 ('HAVE_DIRECT_H', True), 
-('HAVE_GMTIME', True), 
+('HAVE_GMTIME', False), 
 ('HAVE_GMTIME_R', True), 
 ('HAVE_IO_H', True), 
 ('HAVE_LOCALTIME', True), 
@@ -221,6 +221,8 @@ for switch_option in switch_options:
 for bool_option in bool_options:
   if (bool_option[1]):
     subst_dict.append(('#cmakedefine ' + bool_option[0], '#define ' + bool_option[0]))
+  else:
+    subst_dict.append(('#cmakedefine ' + bool_option[0], '// #define ' + bool_option[0]))
     
 for size_option in size_options:
   subst_dict.append(('@' + size_option[0] + '_CODE@', '#define ' + size_option[0] + ' ' + size_option[1]))

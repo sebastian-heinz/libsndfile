@@ -16,6 +16,8 @@ protected:
 public:
 	static Libsndfile *get_singleton();
 
+	void read_file(const String &p_path);
+
 	Libsndfile();
 	~Libsndfile();
 };
