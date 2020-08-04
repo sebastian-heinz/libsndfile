@@ -2,6 +2,9 @@ libsndfile
 ===
 module for godot
 
+
+# This is very experimental, only tested compiling on windows
+
 ## Setup:
 ### via submodule
 - open a terminal inside the godot source folder and run the following commands:  
