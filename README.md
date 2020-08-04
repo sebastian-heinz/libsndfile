@@ -17,6 +17,7 @@ module for godot
   Since it is missing the libsndfile source, it has to be manually added. Get it from https://github.com/erikd/libsndfile/releases/tag/1.0.29 and paste it into the empty libsndfile folder. (./libsndfile/libsndfile/).
 
 ## Dependencies
+- Godot: `3.2`
 - libsndfile: `1.0.29`
 
 ## Links
